@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+ 
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.form {
+  max-width: 450px;
+  width: 100%;
+  min-height: 500px;
+  height: auto;
+  border-radius: 5px;
+  margin: 5% auto;
+  box-shadow: 20px 20px 20px hsl(42deg 8% 32% / 31%);
+  padding: 2%;
+  background-image: linear-gradient(-225deg, #705322 50%, #000000 50%);
+}
+
+.con {
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-justify-content: space-between;
+  justify-content: space-around;
+
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  margin: 0 auto;
+}
+
+.head-form {
+  margin: 1rem auto 2rem auto;
+  text-align: center;
+}
+
+.head-form h2 {
+  font-size: 250%;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #3e403f;
+  margin-bottom: 2rem;
+}
+
+.head-form p {
+  letter-spacing: 0.05em;
+}
+
+.input-item {
+  background-color: lightgray;
+  width: 13%;
+  padding: 0.93rem;
+  padding-right: 20px;
+  border-right: 5px solid #c6c1c159;
+  border-width: 0.5px;
+}
+
+.form-input {
+  
+  border-width: 0.5px;
+  width: 87%;
+  padding: 0.98rem;
+  
+  background-color: #fff;
+  font-size: 0.9rem;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+.input-field {
+  max-width: 22rem;
+  width: 100%;
+  margin: 1.5rem 0 0.5rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.field-set {
+  max-width: 22rem;
+  width: 100%;
+}
+
+
+.login-button {
+
+  width: 100%;
+  padding: 0.98rem;
+  border-radius: 5px;
+  
+  background-color:white;
+  font-size: 0.9rem;
+
+  display: inline-block;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s linear;
+  margin: 7% auto;
+  letter-spacing: 0.05em;
+  font-family: 'Roboto Condensed', sans-serif;
+  
+}
+.login-button:hover{
+  width:95%;
+  color: #252537;
+  padding: 0.9rem 1rem;
+  background: #fff;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  left: 50%;
+}
+.avatar{
+  width: 100px;
+}
+.avatar:hover{
+ 
+  border-radius: 25px;
+}
+.submit-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  padding: 0.98rem;
+  border: none;
+  background-color: rgb(129, 113, 222);
+  font-size: 0.9rem;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.other {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+

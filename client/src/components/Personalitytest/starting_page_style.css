@@ -1,0 +1,95 @@
+.starting_page{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 80%;
+    max-width: 100%;
+    background-color: #f3e1ba;
+}
+
+html {
+    scroll-behavior : smooth;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css2?family=Krub:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@500&display=swap');
+
+
+.title {
+    position: absolute;
+    margin-left: 10%;
+    height: min-content;
+    font-family: 'Krub';
+    font-size: 25px;
+}
+.title1{
+    font-weight:500;
+}
+.title2{
+    font-weight:500;
+    color: gray;
+    line-height: 1cm;
+}
+
+.stages{
+    position:absolute;
+    width: 60%;
+    height: 150px;
+    top: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-top: 4%;
+}
+.dot {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color:rgb(205, 174, 141);
+    border-radius: 50%;
+    display: inline-block;
+    font-size:20px;
+    font-family: 'Krub';
+    color: black;
+    text-align: justify;
+    text-align-last: center;
+    top:-45px;
+}
+.dot span.number{
+    font-size: 30px;
+    font-family: 'Poppins';
+    font-weight: bolder;
+    background-color:rgb(205, 174, 141);
+    line-height: 1cm;
+}
+
+.line {
+    top:50%;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(205, 174, 141);
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.take_test_b1{
+    background-color: #ca9465;
+    color: white;
+    font-family: 'Krub';
+    font-weight: 500;
+    font-size: larger;
+    height: fit-content;
+    padding-inline: 3cm;
+    padding-block: 0.5cm;
+    border: 0cm;
+    border-radius: 10px;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    margin-top: 33%;
+    margin-left: 40%;
+    text-decoration: none;
+} 
+

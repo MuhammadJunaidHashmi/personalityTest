@@ -1,0 +1,95 @@
+.catalyst_profiling{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 50%;
+    max-width: 100%;
+    background-color: #f3e1ba;
+}
+
+html {
+    scroll-behavior : smooth;
+}
+.stage_number{
+    position: absolute;
+    margin-top: 6%;
+    margin-left: 10%;
+    font-size:xx-large;
+    font-family: "Krub";
+    font-weight: bolder;
+    display: inline-block;
+    width: 80%;
+    height: min-content;
+}
+
+.stage_number h2{
+    font-weight: normal;
+    background-color: transparent;
+    position: relative;
+    font-size: smaller;
+}
+.disagree{
+    margin-top: -3%;
+    margin-left: 50%;
+}
+.neutral{
+    margin-top: -2.5%;
+    margin-left: 78%;
+}
+.agree{
+    margin-left: 92%;
+    margin-top: -2.5%;
+}
+
+.q{
+    position: absolute;
+    height: 70%;
+    margin-top: 10%;
+}
+.card {
+    border: 1px solid black;
+    width: 80%;
+    height: min-content;
+    margin-left: 10%;
+    display: inline-block;
+    border-spacing: 0;
+}
+
+.questions{
+    margin-left:10px;
+    font-size: 24px;
+    font-family: 'Krub';
+    width: 60%;
+    height: 100%;
+}
+
+.ans input{
+    white-space: nowrap;
+    width: 40px;
+    height: 40px;
+    margin-right: 50px;
+}
+
+.ans{
+    display: inline;
+    float: right;
+}
+
+.submit_b1{
+    background-color: #ca9465;
+    color: white;
+    font-family: 'Krub';
+    font-weight: 500;
+    font-size: larger;
+    height: fit-content;
+    padding-inline: 3cm;
+    padding-block: 0.5cm;
+    border: 0cm;
+    border-radius: 10px;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    margin-top: 45%;
+    margin-left: 40%;
+    text-decoration: none;
+} 
