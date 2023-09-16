@@ -72,10 +72,10 @@ module.exports.signup = async (req, res, next) => {
     if (!errors.isEmpty()) {
       throw new CustomError(errors.array(), 422, errors.array()[0]?.msg);
     }
-    const { firstName, lastName, email, password ,education,interest,skills,points,avatar} = req.body;
+    const { firstName, lastName, email, password ,education,interest,skills,points,avatar,report} = req.body;
 
     /* Custom methods on newUser are defined in User model */
-    const newUser = new User({ firstName, lastName, email, password,education,interest,skills,points,avatar});
+    const newUser = new User({ firstName, lastName, email, password,education,interest,skills,points,avatar,report});
     await newUser.save(); // Save new User to DB
     const accessToken = await newUser.generateAcessToken(); // Create Access Token
     const refreshToken = await newUser.generateRefreshToken(); // Create Refresh Token
@@ -342,8 +342,7 @@ module.exports.edit = async (req, res, next) => {
     if (!errors.isEmpty()) {
       throw new CustomError(errors.array(), 422, errors.array()[0]?.msg);
     }
-    const emails = "hashmijunaid41@gmail.com"
-console.log("email "+emails);
+  
     const users = await User.findById(req.params._id);
     console.log("user "+users);
     //const token = new String(req.params.token);
@@ -355,6 +354,7 @@ console.log("email "+emails);
     users.skills=req.body.skills;
     users.points=req.body.points;
     users.avatar = req.body.avatar;
+    users.report = req.body.report;
 
     // user.resetpasswordtoken = undefined;
     // user.resetpasswordtokenexpiry = undefined;

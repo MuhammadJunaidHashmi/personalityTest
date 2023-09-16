@@ -12,9 +12,9 @@ html {
 }
 .stage_number{
     position: absolute;
-    margin-top: 6%;
+    margin-top: 1%;
     margin-left: 10%;
-    font-size:xx-large;
+    font-size:large;
     font-family: "Krub";
     font-weight: bolder;
     display: inline-block;
@@ -29,8 +29,8 @@ html {
     font-size: smaller;
 }
 .disagree{
-    margin-top: -3%;
-    margin-left: 50%;
+    margin-top: -2%;
+    margin-left: 70%;
 }
 .neutral{
     margin-top: -2.5%;
@@ -44,7 +44,7 @@ html {
 .q{
     position: absolute;
     height: 70%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 .card {
     border: 1px solid black;
@@ -57,17 +57,17 @@ html {
 
 .questions{
     margin-left:10px;
-    font-size: 24px;
+    font-size: 14px;
     font-family: 'Krub';
     width: 60%;
-    height: 100%;
+   
 }
 
 .ans input{
     white-space: nowrap;
-    width: 40px;
-    height: 40px;
-    margin-right: 50px;
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
 }
 
 .ans{

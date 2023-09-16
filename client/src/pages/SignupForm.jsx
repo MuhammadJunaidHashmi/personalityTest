@@ -26,6 +26,7 @@ function Signup() {
       skills:"",
       points: 1500,
       avatar:"",
+      report:{"o":"","c":"","e":"","a":"","n":""}
     },
 
     validationSchema: Yup.object({

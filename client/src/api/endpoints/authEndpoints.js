@@ -58,7 +58,7 @@ export const signup = (data) =>
   http.post("/signup", data, { withCredentials: true });
   export const edit = (data) =>{
    
-    const { _id,firstName, lastName, email,education,interest,skills,points ,avatar} = data;
+    const { _id,firstName, lastName, email,education,interest,skills,points ,avatar,report} = data;
   http.patch(`/edit/${_id}`, data);
   }
 

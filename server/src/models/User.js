@@ -47,6 +47,9 @@ const UserSchema = new User({
   avatar:{
     type:String,
   },
+  report:{
+    type:Array,
+  },
   tokens: [
     {
       token: { required: true, type: String },
@@ -62,9 +65,9 @@ const UserSchema = new User({
 UserSchema.set("toJSON", {
   virtuals: true,
   transform: function (doc, ret, options) {
-    const { _id, firstName, lastName, email,education,interest,skills,points,avatar } = ret;
+    const { _id, firstName, lastName, email,education,interest,skills,points,avatar,report } = ret;
 
-    return { _id, firstName, lastName, email,education,interest,skills,points,avatar }; // return fields we need
+    return { _id, firstName, lastName, email,education,interest,skills,points,avatar,report }; // return fields we need
   },
 });
 

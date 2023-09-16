@@ -58,6 +58,8 @@ const Profile = () => {
       skills: user?.skills,
       points:user?.points,
       avatar: user?.avatar,
+      report:user?.report,
+      
     },
 
     validationSchema: Yup.object({

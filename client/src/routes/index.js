@@ -15,6 +15,7 @@ import Personalitytest from "../components/Personalitytest";
 import Personalityreport from "../components/Personalityreport";
 import Matching from "../components/Matching";
 import Profiling from "../components/Profiling";
+import Recommendation from "../components/Recomandation";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,7 @@ const router = createBrowserRouter([
           { path: "catalyst_report", element: <Personalityreport /> },
           { path: "matching_page", element: <Matching /> },
           { path: "catalyst_profiling", element: <Profiling /> },
+          { path: "advice", element: <Recommendation /> },
           
         ],
       },
